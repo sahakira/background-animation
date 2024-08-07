@@ -1,0 +1,44 @@
+ @import url('https://fonts.googleapis.com/css2?family=Charm:wght@400;700&family=Dancing+Script:wght@400..700&family=Edu+AU+VIC+WA+NT+Hand:wght@400..700&family=Lilita+One&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Oswald:wght@200..700&family=Playwrite+AR:wght@100..400&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+ body{
+    color: black;;
+ }
+.container{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    background-image: url(./img/background.avif);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    
+} 
+.animated{
+    font-family:"Charm",cursive;
+    margin: 0;
+    padding: 0;
+    font-size: 60px;
+    background: url(./img/background.webp);
+    background-position: center;
+    /* background-repeat: no-repeat; */
+    background-size: cover;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    animation: moveBg 2s linear infinite;
+    -webkit-animation: moveBg 2s linear infinite ;
+    
+}
+@keyframes moveBg{
+    0%{
+        background-position: 0% 30%;
+    }
+    50%{
+        background-position: 50% 40%;
+    }
+    100%{
+        background-position: 100% 50%;
+    }
+}
